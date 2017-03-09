@@ -24,6 +24,8 @@ public class cactpot extends ListenerAdapter {
 			.setToken("Mjg2OTA3NjU1MjM3MjcxNTUy.C5nlJA.8SYQDkro428pmEFZrtI4znyZJkU")
 			.addListener(new cactpot())
 			.buildAsync();
+			database db = new database();
+			db.writedb("lys", 1, "name", "Shunko");
 		} catch (LoginException | IllegalArgumentException | RateLimitedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
